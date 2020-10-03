@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<label for="title">タスク内容</label><br />
+<label for="title">報告者</label><br />
 <input type="text" name="title" value="${message.title}" />
 <br /><br />
 
