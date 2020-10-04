@@ -32,7 +32,7 @@
                 </c:choose>
             </c:forEach>
         </div>
-        <p><a href="${pageContext.request.contextPath}/new">タスクの報告</a></p>
+        <p><a href="${pageContext.request.contextPath}/new">タスク管理ページ</a></p>
 
     </c:param>
 </c:import>

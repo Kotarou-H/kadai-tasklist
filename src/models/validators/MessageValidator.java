@@ -25,7 +25,7 @@ public class MessageValidator {
 
     private static String _validateTitle(String title) {
         if(title == null || title.equals("")) {
-            return "報告者を入力してください。";
+            return "タイトルを入力してください。";
         }
 
         return "";

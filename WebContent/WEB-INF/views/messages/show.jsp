@@ -10,7 +10,7 @@
         <table>
                     <tbody>
                         <tr>
-                            <th>報告者</th>
+                            <th>タイトル</th>
                             <td><c:out value="${message.title}" /></td>
                         </tr>
                         <tr>

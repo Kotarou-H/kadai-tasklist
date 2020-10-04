@@ -9,7 +9,7 @@
 
     </div>
 </c:if>
-<label for="title">報告者</label><br />
+<label for="title">タイトル</label><br />
 <input type="text" name="title" value="${message.title}" />
 <br /><br />
 
@@ -18,4 +18,4 @@
 <br /><br />
 
 <input type="hidden" name="_token" value="${_token}" />
-<button type="submit">報告</button>
+<button type="submit">投稿</button>
