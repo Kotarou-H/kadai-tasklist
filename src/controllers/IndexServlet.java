@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import models.Message;
 import utils.DBUtil;
-
 /**
  * Servlet implementation class IndexServlet
  */
@@ -51,17 +50,17 @@ public class IndexServlet extends HttpServlet {
         em.close();
 
         request.setAttribute("messages", messages);
+        request.setAttribute("messages_count", messages_count);
+        request.setAttribute("page", page);
 
         if(request.getSession().getAttribute("flush") != null) {
             request.setAttribute("flush", request.getSession().getAttribute("flush"));
             request.getSession().removeAttribute("flush");
-
-        request.setAttribute("messages_count", messages_count);
-        request.setAttribute("page", page);
+        }
 
 
         RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/messages/index.jsp");
         rd.forward(request, response);
     }
-  }
+
 }
